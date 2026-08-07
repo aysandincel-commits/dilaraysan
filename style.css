@@ -1444,16 +1444,47 @@ COUNTDOWN
 
 @media (max-width:768px){
 
-    .photo-break,
-    .photo-break-2,
-    .countdown{
-        background-attachment:scroll;
-        background-position:center center;
+    /* HERO */
+
+    .hero{
+        min-height:100svh;
+        padding:0 20px;
+    }
+
+    .background{
+        background-position:55% center;
+    }
+
+    .monogram{
+        width:100px;
+        margin-bottom:20px;
+    }
+
+    .hero h1{
+        font-size:56px;
+        line-height:1.08;
+    }
+
+    .hero .ampersand{
+        font-size:36px;
+        margin:10px 0;
+    }
+
+    .date{
+        font-size:16px;
+        letter-spacing:5px;
+    }
+
+
+    /* EVENT */
+
+    .event{
+        padding:60px 18px;
     }
 
     .event-card{
-        width:94%;
-        padding:40px 24px;
+        width:100%;
+        padding:42px 24px;
         border-radius:24px;
     }
 
@@ -1472,6 +1503,117 @@ COUNTDOWN
     .map-button{
         width:100%;
         padding:16px;
+    }
+
+
+    /* PHOTO BREAK */
+
+    .photo-break,
+    .photo-break-2,
+    .countdown{
+
+        background-attachment:scroll;
+        background-position:center center;
+
+    }
+
+    .photo-content{
+
+        max-width:100%;
+        padding:0 20px;
+
+    }
+
+    .photo-content h2{
+
+        font-size:48px;
+        line-height:1.15;
+
+    }
+
+    .photo-content .story-date{
+
+        font-size:17px;
+        letter-spacing:4px;
+
+    }
+
+
+    /* RSVP */
+
+    .rsvp{
+
+        padding:60px 18px;
+
+    }
+
+    .rsvp-box{
+
+        width:100%;
+        padding:36px 22px;
+
+    }
+
+    .guest-buttons{
+
+        grid-template-columns:repeat(3,1fr);
+        gap:12px;
+
+    }
+
+    .submit-button{
+
+        width:100%;
+
+    }
+
+
+    /* COUNTDOWN */
+
+    .countdown{
+
+        padding:80px 20px;
+
+    }
+
+    .countdown h2{
+
+        font-size:44px;
+
+    }
+
+    .count-grid{
+
+        grid-template-columns:repeat(2,1fr);
+        gap:16px;
+
+    }
+
+    .count-item{
+
+        padding:24px 10px;
+
+    }
+
+    .count-item span{
+
+        font-size:44px;
+
+    }
+
+    .count-item small{
+
+        font-size:11px;
+
+    }
+
+
+    /* FOOTER */
+
+    footer{
+
+        padding:70px 20px;
+
     }
 
 }
