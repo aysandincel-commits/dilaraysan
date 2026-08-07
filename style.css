@@ -1438,6 +1438,10 @@ COUNTDOWN
     color:var(--text);
     border-color:var(--gold);
 }
+/* ==========================================
+   MOBILE OPTIMIZATION
+========================================== */
+
 @media (max-width:768px){
 
     .photo-break,
@@ -1445,6 +1449,8 @@ COUNTDOWN
     .countdown{
 
         background-attachment:scroll;
+
+        background-position:center center;
 
     }
 
