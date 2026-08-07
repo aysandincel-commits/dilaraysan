@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dilara & Aysan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="noise"></div>
+
+    <header class="hero">
+
+        <!-- Arka Plan -->
+        <div class="background"></div>
+
+        <!-- Karartma -->
+        <div class="overlay"></div>
+
+        <!-- Sağ Üst Butonlar -->
+        <div class="top-buttons">
+
+            <button class="circle-btn" id="musicBtn" aria-label="Müzik">
+                🔊
+            </button>
+
+            <button class="circle-btn" id="locationBtn" aria-label="Konum">
+                📍
+            </button>
+
+        </div>
+
+        <!-- Orta İçerik -->
+        <div class="hero-content">
+
+            <div class="line"></div>
+
+            <div class="monogram">
+                <img src="assets/icons/monogram.svg" alt="Dilara & Aysan Monogram">
+            </div>
+
+            <h1>
+                Dilara
+                <span>&</span>
+                Aysan
+            </h1>
+
+            <p class="date">
+                22 Ağustos 2026
+            </p>
+
+            <div class="scroll">
+                ↓
+            </div>
+
+        </div>
+
+    </header>
+    
+
+<section class="event">
+
+    <div class="event-card fade-up">
+
+        <span class="event-small">
+            SİZLERİ BEKLİYORUZ
+        </span>
+
+        <h2>
+            Nişan Töreni
+        </h2>
+
+        <div class="event-line"></div>
+
+        <div class="event-item">
+
+            <h3>Tarih</h3>
+
+            <p>22 Ağustos 2026</p>
+
+        </div>
+
+        <div class="event-item">
+
+            <h3>Saat</h3>
+
+            <p>19:00</p>
+
+        </div>
+
+        <div class="event-item">
+
+            <h3>Mekan</h3>
+
+            <p>Alkent 2000 Sitesi</p>
+
+        </div>
+
+        <button id="mapButton" class="map-button">
+
+            Konumu Aç
+
+        </button>
+
+    </div>
+
+</section>
+<section class="photo-break">
+
+    <div class="photo-overlay"></div>
+
+    <div class="photo-content fade-up">
+
+        <span>22 · 08 · 2026</span>
+
+        <h2>
+            Birlikte yeni bir hikayeye başlıyoruz.
+        </h2>
+
+    </div>
+
+</section>
+<section class="rsvp">
+
+    <div class="rsvp-box fade-up">
+
+        <span class="rsvp-small">RSVP</span>
+
+        <h2>Katılım Durumu</h2>
+
+        <p class="rsvp-text">
+            Katılım durumunuzu bizimle paylaşabilir misiniz?
+        </p>
+
+        <form id="rsvpForm">
+
+    <div class="field">
+
+        <label for="guestName">
+            Ad Soyad
+        </label>
+
+        <input
+            type="text"
+            id="guestName"
+            placeholder="Adınızı ve soyadınızı yazın"
+            autocomplete="name"
+            required>
+
+    </div>
+
+
+    <div class="field">
+
+        <label>
+            Katılım Durumu
+        </label>
+
+        <div class="attendance-buttons">
+
+            <button
+                type="button"
+                class="attendance-btn active"
+                data-status="Katılıyoruz">
+
+                ❤️ Katılıyoruz
+
+            </button>
+
+            <button
+                type="button"
+                class="attendance-btn"
+                data-status="Katılamıyoruz">
+
+                Üzgünüz, Katılamıyoruz
+
+            </button>
+
+        </div>
+
+        <input
+            type="hidden"
+            id="attendance"
+            value="Katılıyoruz">
+
+    </div>
+
+
+<div class="field" id="guestCountField">
+
+    <label>
+        Kaç kişi geleceksiniz?
+    </label>
+
+    <div class="guest-buttons">
+
+        <button type="button" class="guest-btn active" data-count="1">
+            1
+        </button>
+
+        <button type="button" class="guest-btn" data-count="2">
+            2
+        </button>
+
+        <button type="button" class="guest-btn" data-count="3">
+            3
+        </button>
+
+        <button type="button" class="guest-btn" data-count="4">
+            4
+        </button>
+
+        <button type="button" class="guest-btn" data-count="5">
+            5
+        </button>
+
+    </div>
+
+    <input
+        type="hidden"
+        id="guestCount"
+        value="1">
+
+</div>
+
+
+    <div class="field">
+
+        <label for="guestMessage">
+            Mesajınız
+        </label>
+
+        <textarea
+            id="guestMessage"
+            rows="5"
+            placeholder="İsterseniz bize küçük bir not bırakabilirsiniz."></textarea>
+
+    </div>
+
+
+    <button
+        type="submit"
+        class="submit-button">
+
+        Yanıtı Gönder
+
+    </button>
+
+</form>
+<div class="success-message" id="successMessage">
+
+    <div class="success-icon">
+
+        ❤
+
+    </div>
+
+    <h3>
+
+        Teşekkür Ederiz
+
+    </h3>
+
+    <p>
+
+        Yanıtınız bize ulaştı.
+
+        <br><br>
+
+        Bu özel günümüzde bizimle olacağınızı bilmek şimdiden bizi çok mutlu etti.
+
+        <br><br>
+
+        <strong>
+        22 Ağustos 2026'da görüşmek dileğiyle. ❤️
+        </strong>
+
+    </p>
+
+</div>
+    </div>
+
+</section>
+<section class="countdown">
+
+    <div class="countdown-content fade-up">
+
+        <span class="countdown-small">
+            GERİ SAYIM
+        </span>
+
+        <h2>
+
+            Buluşmamıza Kalan Süre
+
+        </h2>
+
+        <div class="count-grid">
+
+            <div class="count-item">
+                <span id="days">00</span>
+                <small>Gün</small>
+            </div>
+
+            <div class="count-item">
+                <span id="hours">00</span>
+                <small>Saat</small>
+            </div>
+
+            <div class="count-item">
+                <span id="minutes">00</span>
+                <small>Dakika</small>
+            </div>
+
+            <div class="count-item">
+                <span id="seconds">00</span>
+                <small>Saniye</small>
+            </div>
+
+        </div>
+
+        <p class="count-date">
+
+            22 Ağustos 2026 • 19:00
+
+        </p>
+
+    </div>
+</section>
+    <section class="photo-break photo-break-2">
+
+    <div class="photo-overlay"></div>
+
+    <div class="photo-content fade-up">
+
+        <span>
+            BİRLİKTE
+        </span>
+
+        <h2>
+
+            En güzel anılar,
+            birlikte yaşananlardır.
+
+        </h2>
+
+    </div>
+
+</section>
+ <!-- Background Music -->
+<audio id="bgMusic" preload="auto" loop>
+    <source src="assets/music/background.mp3" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+<footer class="footer">
+
+    <div class="footer-line"></div>
+
+    <div class="footer-monogram">
+
+        DA
+
+    </div>
+
+    <h2>
+
+        Dilara & Aysan
+
+    </h2>
+
+    <p>
+
+        22 Ağustos 2026 • 19:00
+
+    </p>
+
+    <span>
+
+        Sevgiyle hazırlanmıştır.
+
+    </span>
+
+</footer>
+</body>
+
+</html>

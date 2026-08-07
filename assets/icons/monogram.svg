@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 420 420">
+
+    <defs>
+        <style>
+            .gold{
+                fill:#C8A977;
+            }
+        </style>
+    </defs>
+
+    <!-- D -->
+    <path class="gold"
+          d="
+          M110 60
+          L110 360
+          L145 360
+          L145 90
+          Q270 90 270 210
+          Q270 330 145 330
+          L145 360
+          Q320 360 320 210
+          Q320 60 145 60
+          Z"/>
+
+    <!-- A -->
+    <path class="gold"
+          d="
+          M235 335
+          L285 140
+          L335 335
+          L312 335
+          L301 288
+          L268 288
+          L257 335
+          Z"/>
+
+    <rect class="gold"
+          x="272"
+          y="250"
+          width="28"
+          height="8"
+          rx="4"/>
+
+</svg>
