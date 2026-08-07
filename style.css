@@ -854,6 +854,13 @@ header{
     letter-spacing:8px;
     font-size:13px;
     text-transform:uppercase;
+.story-date{
+
+    color:rgba(255,255,255,.82);
+
+    text-shadow:0 2px 12px rgba(0,0,0,.35);
+
+}
 }
 
 .photo-content h2{
