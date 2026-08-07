@@ -825,7 +825,7 @@ header{
 .photo-break{
     position:relative;
     min-height:100vh;
-    background:url("assets/photos/photo1.jpg");
+    background:url("assets/photos/photo1.png");
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
@@ -1326,7 +1326,7 @@ COUNTDOWN
     justify-content:center;
     align-items:center;
     overflow:hidden;
-    background-image:url("assets/photos/photo2.jpg");
+    background-image:url("assets/photos/photo2.png");
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
