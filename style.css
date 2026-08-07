@@ -1447,11 +1447,31 @@ COUNTDOWN
     .photo-break,
     .photo-break-2,
     .countdown{
-
         background-attachment:scroll;
-
         background-position:center center;
+    }
 
+    .event-card{
+        width:94%;
+        padding:40px 24px;
+        border-radius:24px;
+    }
+
+    .event h2{
+        font-size:44px;
+    }
+
+    .event-item{
+        margin:20px 0;
+    }
+
+    .event-item p{
+        font-size:17px;
+    }
+
+    .map-button{
+        width:100%;
+        padding:16px;
     }
 
 }
