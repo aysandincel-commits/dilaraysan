@@ -327,12 +327,34 @@ function updateCountdown(){
 
 }
 /* ==========================================
-   GUEST COUNT BUTTONS
+GUEST COUNT BUTTONS
 ========================================== */
 
 const guestButtons = document.querySelectorAll(".guest-btn");
 const guestCountInput = document.getElementById("guestCount");
 
+/* URL'deki max değerini oku */
+const urlParams = new URLSearchParams(window.location.search);
+const maxGuests = urlParams.get("max");
+
+/* Sadece 2 veya 4 kişilik davetiyeye izin ver */
+if(maxGuests === "2" || maxGuests === "4"){
+
+    guestButtons.forEach(button => {
+
+        const count = parseInt(button.dataset.count);
+
+        if(count > parseInt(maxGuests)){
+
+            button.style.display = "none";
+
+        }
+
+    });
+
+}
+
+/* Butonların çalışma mantığı */
 guestButtons.forEach(button=>{
 
     button.addEventListener("click",()=>{
