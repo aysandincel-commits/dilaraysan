@@ -1454,9 +1454,16 @@ COUNTDOWN
     }
 
     .monogram{
-        width:100px;
-        margin-bottom:20px;
-    }
+    width:100%;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+    .monogram img{
+    width:100px;
+    display:block;
+    margin:0 auto;
+}
 
     .hero h1{
         font-size:56px;
