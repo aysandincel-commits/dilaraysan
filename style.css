@@ -1678,4 +1678,60 @@ COUNTDOWN
     transform:translateX(-50%) translateY(1px);
 
 }
+/* ==========================================
+   TÜM BÖLÜMLERDE AŞAĞI KAYDIR BUTONU
+========================================== */
+
+.hero,
+.event,
+.countdown,
+.rsvp,
+.photo-break{
+    position:relative;
+}
+
+.scroll-next{
+    width:120px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:absolute;
+    bottom:28px;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.65);
+    border-radius:999px;
+
+    color:white;
+
+    font-size:20px;
+    font-weight:300;
+    line-height:1;
+
+    cursor:pointer;
+    z-index:10;
+
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+
+    transition:
+        background .3s ease,
+        transform .3s ease,
+        border-color .3s ease;
+}
+
+.scroll-next:hover{
+    background:rgba(255,255,255,.18);
+    border-color:white;
+    transform:translateX(-50%) translateY(-2px);
+}
+
+.scroll-next:active{
+    transform:translateX(-50%) translateY(1px);
+}
 }
