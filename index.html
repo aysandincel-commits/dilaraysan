@@ -250,29 +250,18 @@
 
 <div class="field" id="guestCountField">
 
-    <label>
+    <label for="guestCount">
         Kaç kişi geleceksiniz?
     </label>
 
-    <div class="guest-buttons">
+    <select id="guestCount" name="guestCount">
+        <option value="1">1 kişi</option>
+        <option value="2">2 kişi</option>
+        <option value="3">3 kişi</option>
+        <option value="4">4 kişi</option>
+    </select>
 
-        <button type="button" class="guest-btn active" data-count="1">
-            1
-        </button>
-
-        <button type="button" class="guest-btn" data-count="2">
-            2
-        </button>
-
-        <button type="button" class="guest-btn" data-count="3">
-            3
-        </button>
-
-        <button type="button" class="guest-btn" data-count="4">
-            4
-        </button> 
-
-    </div>
+</div>
 
     <input
         type="hidden"
