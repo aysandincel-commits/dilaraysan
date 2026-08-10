@@ -1,33 +1,22 @@
 /* ==========================================
    DILARA & AYSAN
    Luxury Invitation
-   Part 1
+   Cleaned CSS
 ========================================== */
 
 :root{
-
     --bg:#F8F4EE;
-
     --section:#FFFDF9;
-
     --card:#FFFFFF;
-
     --gold:#C8A977;
-
     --text:#2F2A25;
-
     --text-light:#6E675F;
-
     --border:#E8DED2;
-
     --white:#FFFFFF;
-
     --shadow:0 18px 45px rgba(47,42,37,.06);
-
 }
 
 /* RESET */
-
 *{
     margin:0;
     padding:0;
@@ -35,719 +24,253 @@
 }
 
 html{
-
     scroll-behavior:smooth;
-
-}
-
-body{
-
-    background:var(--bg);
-
-    color:var(--text);
-
-    font-family:'Montserrat',sans-serif;
-
-    overflow-x:hidden;
-
-    line-height:1.7;
-
-    letter-spacing:.01em;
-
-}
-
-/* Noise */
-
-.noise{
-
-    position:fixed;
-
-    inset:0;
-
-    pointer-events:none;
-
-    opacity:.03;
-
-    background-image:radial-gradient(rgba(255,255,255,.9) 1px, transparent 1px);
-
-    background-size:7px 7px;
-
-    z-index:999;
-
-}
-
-/* ===========================
-        HERO
-=========================== */
-
-.hero{
-
-    position:relative;
-
-    width:100%;
-
-    min-height:100vh;
-
-    overflow:hidden;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:linear-gradient(135deg, rgba(248,244,238,.95), rgba(255,253,249,.38));
-
-}
-
-/* FOTOĞRAF */
-
-.background{
-
-    position:absolute;
-
-    inset:0;
-
-    background-image:url("assets/photos/hero.png");
-
-    background-size:cover;
-
-    background-position:center;
-
-    animation:heroZoom 24s ease-in-out infinite alternate;
-
-}
-
-/* KARARTMA */
-
-.overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:linear-gradient(135deg, rgba(255,248,239,.22) 0%, rgba(255,248,239,.10) 30%, rgba(47,42,37,.22) 100%);
-
-}
-
-/* ORTA */
-
-.hero-content{
-
-    position:relative;
-
-    z-index:5;
-
-    text-align:center;
-
-    width:min(90%,760px);
-
-}
-
-/* ÇİZGİ */
-
-.line{
-
-    width:80px;
-
-    height:1px;
-
-    background:var(--gold);
-
-    margin:0 auto 45px;
-
-}
-
-/* MONOGRAM */
-
-.monogram{
-
-    margin-bottom:30px;
-
-}
-
-.monogram img{
-
-    width:180px;
-
-    display:block;
-
-    margin:auto;
-
-}
-
-/* İSİMLER */
-
-.hero h1{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:74px;
-
-    font-weight:400;
-
-    line-height:1.15;
-
-    letter-spacing:.5px;
-
-}
-
-.hero h1 span{
-
-    display:block;
-
-    color:var(--gold);
-
-    font-size:36px;
-
-    margin:14px 0;
-
-}
-
-/* TARİH */
-
-.date{
-
-    margin-top:38px;
-
-    color:var(--text);
-
-    font-size:20px;
-
-    font-weight:500;
-
-    letter-spacing:5px;
-
-    text-transform:uppercase;
-
-    text-shadow:0 2px 10px rgba(0,0,0,.18);
-
-}
-/* ===========================
-      TOP BUTTONS
-=========================== */
-
-.top-buttons{
-
-    position:absolute;
-
-    top:35px;
-
-    right:35px;
-
-    display:flex;
-
-    gap:15px;
-
-    z-index:20;
-
-}
-
-.circle-btn{
-
-    width:58px;
-
-    height:58px;
-
-    border-radius:50%;
-
-    border:1px solid var(--border);
-
-    background:rgba(255,255,255,.8);
-
-    backdrop-filter:blur(12px);
-
-    -webkit-backdrop-filter:blur(12px);
-
-    color:var(--text);
-
-    font-size:24px;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    box-shadow:0 12px 30px rgba(47,42,37,.08);
-
-}
-
-.circle-btn:hover{
-
-    transform:translateY(-3px);
-
-    border-color:var(--gold);
-
-    color:var(--gold);
-
-    box-shadow:0 15px 35px rgba(200,169,119,.18);
-
-}
-
-/* ===========================
-      SCROLL ICON
-=========================== */
-
-.scroll{
-
-    margin-top:80px;
-
-    color:var(--gold);
-
-    font-size:28px;
-
-    animation:scrollFloat 2.2s infinite;
-
-    user-select:none;
-
-}
-
-/* ===========================
-      HERO FADE
-=========================== */
-
-.hero-content{
-
-    animation:heroFade 1.8s ease;
-
-}
-
-/* ===========================
-      KEYFRAMES
-=========================== */
-
-@keyframes heroFade{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-@keyframes heroZoom{
-
-    from{
-
-        transform:scale(1);
-
-    }
-
-    to{
-
-        transform:scale(1.08);
-
-    }
-
-}
-
-@keyframes scrollFloat{
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(10px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-/* ===========================
-      GOLD GLOW
-=========================== */
-
-.monogram img{
-
-    filter:
-
-    drop-shadow(0 0 10px rgba(200,169,119,.18))
-
-    drop-shadow(0 0 20px rgba(200,169,119,.10));
-
-}
-
-.hero h1{
-
-    text-shadow:
-
-    0 2px 15px rgba(0,0,0,.35);
-
-}
-
-.date{
-
-    text-shadow:
-
-    0 2px 10px rgba(0,0,0,.25);
-
-}
-/* ==========================================
-   PART 3
-   Premium Motion + Mobile
-========================================== */
-
-
-/* HERO üzerine altın ışık */
-
-.hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    radial-gradient(circle at 50% 20%,
-    rgba(200,169,119,.14),
-    transparent 60%);
-
-    z-index:1;
-
-    pointer-events:none;
-
-}
-
-
-/* Vignette */
-
-.hero::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    radial-gradient(circle,
-    transparent 35%,
-    rgba(0,0,0,.35) 100%);
-
-    z-index:2;
-
-}
-
-
-/* İçerik */
-
-.hero-content{
-
-    position:relative;
-
-    z-index:10;
-
-}
-
-
-/* Monogram */
-
-.monogram{
-
-    transition:.7s;
-
-}
-
-.monogram:hover{
-
-    transform:scale(1.04);
-
-}
-
-
-/* İsim */
-
-.hero h1{
-
-    transition:.6s;
-
-}
-
-.hero:hover h1{
-
-    letter-spacing:1px;
-
-}
-
-
-/* Tarih */
-
-.date{
-
-    opacity:.8;
-
-}
-
-
-/* Buton */
-
-.circle-btn{
-
-    overflow:hidden;
-
-    position:relative;
-
-}
-
-
-/* Buton parıltısı */
-
-.circle-btn::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:-120%;
-
-    top:0;
-
-    width:100%;
-
-    height:100%;
-
-    background:
-
-    linear-gradient(
-
-    90deg,
-
-    transparent,
-
-    rgba(255,255,255,.25),
-
-    transparent
-
-    );
-
-    transition:1s;
-
-}
-
-.circle-btn:hover::before{
-
-    left:120%;
-
-}
-
-
-/* Scroll */
-
-.scroll{
-
-    cursor:default;
-
-    letter-spacing:4px;
-
-}
-
-
-/* Responsive */
-
-@media(max-width:992px){
-
-.hero h1{
-
-font-size:58px;
-
-}
-
-.monogram img{
-
-width:150px;
-
-}
-
-}
-
-
-@media(max-width:768px){
-
-.top-buttons{
-
-top:20px;
-
-right:20px;
-
-gap:10px;
-
-}
-
-.circle-btn{
-
-width:50px;
-
-height:50px;
-
-font-size:20px;
-
-}
-
-.hero h1{
-
-font-size:46px;
-
-}
-
-.hero h1 span{
-
-font-size:26px;
-
-}
-
-.date{
-
-letter-spacing:4px;
-
-font-size:12px;
-
-}
-
-.monogram img{
-
-width:130px;
-
-}
-
-.scroll{
-
-margin-top:60px;
-
-}
-
-}
-
-
-@media(max-width:480px){
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-.hero h1 span{
-
-font-size:22px;
-
-}
-
-.monogram img{
-
-width:110px;
-
-}
-
-.line{
-
-width:55px;
-
-margin-bottom:30px;
-
-}
-
-}
-/* ==========================================
-   STORY SECTION
-========================================== */
-
-.story{
-    min-height:100vh;
-    background:linear-gradient(180deg, var(--section) 0%, var(--bg) 100%);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:140px 30px;
-}
-
-.story-container{
-    max-width:900px;
-    text-align:center;
-}
-
-.story-title{
-    color:var(--gold);
-    letter-spacing:6px;
-    font-size:13px;
-    text-transform:uppercase;
-}
-
-.story h2{
-    font-family:"Cormorant Garamond",serif;
-    font-size:64px;
-    font-weight:400;
-    line-height:1.25;
-    margin:40px 0;
-    color:var(--text);
-}
-
-.story p{
-    max-width:650px;
-    margin:auto;
-    color:var(--text-light);
-    font-size:18px;
-    line-height:1.9;
-}
-
-html{
     scroll-snap-type:y mandatory;
     overflow-y:scroll;
 }
 
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Montserrat',sans-serif;
+    overflow-x:hidden;
+    line-height:1.7;
+    letter-spacing:.01em;
+}
+
 section,
-header{
+header,
+footer{
     scroll-snap-align:start;
     scroll-snap-stop:always;
+}
+
+section,
+header{
     min-height:100vh;
 }
 
-/* ===========================
-   FADE ANIMATION
-=========================== */
-
-.fade-up{
-    opacity:0;
-    transform:translateY(60px);
-    transition:all 1s cubic-bezier(.22,1,.36,1);
+/* NOISE */
+.noise{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.03;
+    background-image:radial-gradient(rgba(255,255,255,.9) 1px,transparent 1px);
+    background-size:7px 7px;
+    z-index:999;
 }
 
-.fade-up.show{
-    opacity:1;
-    transform:translateY(0);
+/* ==========================================
+   HERO
+========================================== */
+.hero{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,rgba(248,244,238,.95),rgba(255,253,249,.38));
+}
+
+.background{
+    position:absolute;
+    inset:0;
+    background-image:url("assets/photos/hero.png");
+    background-size:cover;
+    background-position:center;
+    animation:heroZoom 24s ease-in-out infinite alternate;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,rgba(255,248,239,.22) 0%,rgba(255,248,239,.10) 30%,rgba(47,42,37,.22) 100%);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at 50% 20%,rgba(200,169,119,.14),transparent 60%);
+    z-index:1;
+    pointer-events:none;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle,transparent 35%,rgba(0,0,0,.35) 100%);
+    z-index:2;
+}
+
+.hero-content{
+    position:relative;
+    z-index:10;
+    text-align:center;
+    width:min(90%,760px);
+    animation:heroFade 1.8s ease;
+}
+
+.line{
+    width:80px;
+    height:1px;
+    background:var(--gold);
+    margin:0 auto 45px;
+}
+
+.monogram{
+    margin-bottom:30px;
+    transition:.7s;
+}
+
+.monogram img{
+    width:180px;
+    display:block;
+    margin:auto;
+    filter:drop-shadow(0 0 10px rgba(200,169,119,.18)) drop-shadow(0 0 20px rgba(200,169,119,.10));
+}
+
+.monogram:hover{
+    transform:scale(1.04);
+}
+
+.hero h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:74px;
+    font-weight:400;
+    line-height:1.15;
+    letter-spacing:.5px;
+    text-shadow:0 2px 15px rgba(0,0,0,.35);
+    transition:.6s;
+}
+
+.hero h1 span{
+    display:block;
+    color:var(--gold);
+    font-size:36px;
+    margin:14px 0;
+}
+
+.hero h1 .ampersand{
+    color:var(--gold);
+}
+
+.hero:hover h1{
+    letter-spacing:1px;
+}
+
+.date{
+    margin-top:38px;
+    color:var(--text);
+    font-size:20px;
+    font-weight:500;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    text-shadow:0 2px 10px rgba(0,0,0,.25);
+    opacity:.8;
+}
+
+/* ==========================================
+   TOP BUTTONS
+========================================== */
+.top-buttons{
+    position:absolute;
+    top:35px;
+    right:35px;
+    display:flex;
+    gap:15px;
+    z-index:20;
+}
+
+.circle-btn{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    color:var(--text);
+    font-size:24px;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 12px 30px rgba(47,42,37,.08);
+    overflow:hidden;
+    position:relative;
+}
+
+.circle-btn:hover{
+    transform:translateY(-3px);
+    border-color:var(--gold);
+    color:var(--gold);
+    box-shadow:0 15px 35px rgba(200,169,119,.18);
+}
+
+.circle-btn::before{
+    content:"";
+    position:absolute;
+    left:-120%;
+    top:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);
+    transition:1s;
+}
+
+.circle-btn:hover::before{
+    left:120%;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+@keyframes heroFade{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes heroZoom{
+    from{transform:scale(1);}
+    to{transform:scale(1.08);}
+}
+
+@keyframes successFade{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes photoZoom{
+    from{background-size:100%;}
+    to{background-size:108%;}
 }
 
 /* ==========================================
    EVENT
 ========================================== */
-
 .event{
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     padding:100px 25px;
-    background:linear-gradient(180deg, var(--section) 0%, var(--bg) 100%);
+    background:linear-gradient(180deg,var(--section) 0%,var(--bg) 100%);
+    position:relative;
 }
 
 .event-card{
@@ -819,7 +342,6 @@ header{
 /* ==========================================
    PHOTO BREAK
 ========================================== */
-
 .photo-break{
     position:relative;
     min-height:100vh;
@@ -836,7 +358,7 @@ header{
 .photo-overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(135deg, rgba(255,248,239,.18) 0%, rgba(47,42,37,.24) 100%);
+    background:linear-gradient(135deg,rgba(255,248,239,.18) 0%,rgba(47,42,37,.24) 100%);
 }
 
 .photo-content{
@@ -848,29 +370,18 @@ header{
 }
 
 .photo-content span{
-
     color:var(--gold);
-
     letter-spacing:8px;
-
     font-size:13px;
-
     text-transform:uppercase;
-
 }
 
 .photo-content .story-date{
-
     color:rgba(255,255,255,.82) !important;
-   
     font-size:18px;
-
     font-weight:500;
-
     letter-spacing:4px;
-
     text-shadow:0 2px 12px rgba(0,0,0,.35);
-
 }
 
 .photo-content h2{
@@ -886,14 +397,14 @@ header{
 /* ==========================================
    RSVP
 ========================================== */
-
 .rsvp{
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     padding:120px 30px;
-    background:linear-gradient(180deg, var(--section) 0%, var(--bg) 100%);
+    background:linear-gradient(180deg,var(--section) 0%,var(--bg) 100%);
+    position:relative;
 }
 
 .rsvp-box{
@@ -928,8 +439,6 @@ header{
     line-height:1.8;
     margin-bottom:45px;
 }
-
-/* FORM */
 
 .field{
     margin-bottom:28px;
@@ -967,10 +476,8 @@ header{
 
 .rsvp textarea{
     resize:none;
-    min-height:150px;
+    min-height:60px;
 }
-
-/* KATILIM BUTONLARI */
 
 .attendance-buttons{
     display:flex;
@@ -992,20 +499,16 @@ header{
     transition:.35s;
 }
 
-.attendance-btn:hover{
-    border-color:var(--gold);
-    transform:translateY(-2px);
-    background:var(--gold);
-    color:var(--text);
-}
-
+.attendance-btn:hover,
 .attendance-btn.active{
+    border-color:var(--gold);
     background:var(--gold);
     color:var(--text);
-    border-color:var(--gold);
 }
 
-/* GÖNDER */
+.attendance-btn:hover{
+    transform:translateY(-2px);
+}
 
 .submit-button{
     width:100%;
@@ -1028,31 +531,11 @@ header{
     box-shadow:0 12px 30px rgba(200,169,119,.18);
 }
 
-/* MOBİL */
-
-@media(max-width:768px){
-    .rsvp{
-        padding:80px 20px;
-    }
-
-    .rsvp-box{
-        padding:45px 28px;
-    }
-
-    .rsvp h2{
-        font-size:44px;
-    }
-}
-
-/* ==========================================
-   RSVP ANIMATION
-========================================== */
-
 #guestCountField{
     overflow:hidden;
     max-height:200px;
     opacity:1;
-    transition:max-height .45s ease, opacity .35s ease, margin .35s ease;
+    transition:max-height .45s ease,opacity .35s ease,margin .35s ease;
 }
 
 #guestCountField.hidden{
@@ -1062,10 +545,7 @@ header{
     pointer-events:none;
 }
 
-/* ===========================
-   RSVP SUCCESS
-=========================== */
-
+/* RSVP SUCCESS */
 .success-message{
     display:none;
     text-align:center;
@@ -1079,8 +559,7 @@ header{
 .success-icon{
     width:90px;
     height:90px;
-    margin:auto;
-    margin-bottom:30px;
+    margin:0 auto 30px;
     border-radius:50%;
     background:rgba(200,169,119,.12);
     border:1px solid rgba(200,169,119,.35);
@@ -1104,195 +583,94 @@ header{
     line-height:1.9;
 }
 
-@keyframes successFade{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/*==========================================
-COUNTDOWN
-==========================================*/
-
+/* ==========================================
+   COUNTDOWN
+========================================== */
 .countdown{
-
     position:relative;
-
     min-height:100vh;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     padding:120px 30px;
-
     text-align:center;
-
     overflow:hidden;
-
-    background:
-    linear-gradient(
-        rgba(40,32,25,.38),
-        rgba(40,32,25,.38)
-    ),
-    url("assets/photos/coundownb.png");
-
+    background:linear-gradient(rgba(40,32,25,.38),rgba(40,32,25,.38)),url("assets/photos/coundownb.png");
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
-
     background-attachment:fixed;
-
 }
 
 .countdown-content{
-
     width:min(100%,1000px);
-
     position:relative;
-
     z-index:2;
-
 }
 
 .countdown-small{
-
     color:#F1D8AA;
-
     letter-spacing:8px;
-
     font-size:12px;
-
     text-transform:uppercase;
-
 }
 
 .countdown h2{
-
     font-family:"Cormorant Garamond",serif;
-
     font-size:60px;
-
     font-weight:400;
-
     margin:22px 0 60px;
-
     color:white;
-
 }
 
 .count-grid{
-
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:25px;
-
 }
 
 .count-item{
-
     background:rgba(255,255,255,.12);
-
     backdrop-filter:blur(14px);
-
     -webkit-backdrop-filter:blur(14px);
-
     border:1px solid rgba(255,255,255,.25);
-
     border-radius:24px;
-
     padding:40px 15px;
-
 }
 
 .count-item span{
-
     display:block;
-
     font-size:72px;
-
     font-weight:600;
-
     color:#F1D8AA;
-
     font-family:"Cormorant Garamond",serif;
-
 }
 
 .count-item small{
-
     display:block;
-
     margin-top:12px;
-
     letter-spacing:3px;
-
     text-transform:uppercase;
-
     color:rgba(255,255,255,.9);
-
 }
 
 .count-date{
-
     margin-top:55px;
-
     color:white;
-
     letter-spacing:4px;
-
 }
 
-@media(max-width:768px){
-
-    .count-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .countdown h2{
-
-        font-size:42px;
-
-    }
-
-    .count-item{
-
-        padding:28px 10px;
-
-    }
-
-    .count-item span{
-
-        font-size:48px;
-
-    }
-
-}
 /* ==========================================
    FOOTER
 ========================================== */
-
 .footer{
-    min-height:60vh;
+    min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:linear-gradient(180deg, #fcf8f1 0%, var(--section) 100%);
+    background:linear-gradient(180deg,#fcf8f1 0%,var(--section) 100%);
     padding:80px 20px;
     color:var(--text);
 }
@@ -1335,7 +713,6 @@ COUNTDOWN
 /* ==========================================
    PHOTO BREAK 2
 ========================================== */
-
 .photo-break-2{
     position:relative;
     min-height:100vh;
@@ -1355,7 +732,7 @@ COUNTDOWN
     content:"";
     position:absolute;
     inset:0;
-    background:linear-gradient(135deg, rgba(255,248,239,.15) 0%, rgba(47,42,37,.22) 60%, rgba(47,42,37,.46) 100%);
+    background:linear-gradient(135deg,rgba(255,248,239,.15) 0%,rgba(47,42,37,.22) 60%,rgba(47,42,37,.46) 100%);
 }
 
 .photo-break-2 .photo-content{
@@ -1384,68 +761,62 @@ COUNTDOWN
     text-shadow:0 6px 30px rgba(0,0,0,.30);
 }
 
-@keyframes photoZoom{
-    from{
-        background-size:100%;
-    }
-    to{
-        background-size:108%;
-    }
+/* ==========================================
+   AŞAĞI KAYDIR BUTONU
+========================================== */
+.hero,
+.event,
+.countdown,
+.rsvp,
+.photo-break{
+    position:relative;
+}
+
+.scroll-next{
+    width:120px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    bottom:28px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.65);
+    border-radius:999px;
+    color:white;
+    font-size:20px;
+    font-weight:300;
+    line-height:1;
+    cursor:pointer;
+    z-index:10;
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+    transition:background .3s ease,transform .3s ease,border-color .3s ease;
+}
+
+.scroll-next:hover{
+    background:rgba(255,255,255,.18);
+    border-color:white;
+    transform:translateX(-50%) translateY(-2px);
+}
+
+.scroll-next:active{
+    transform:translateX(-50%) translateY(1px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+@media(max-width:992px){
+    .hero h1{font-size:58px;}
+    .monogram img{width:150px;}
 }
 
 @media(max-width:768px){
-    .photo-break-2 h2{
-        font-size:46px;
-    }
-}
 
-/* ==========================================
-   GUEST COUNT BUTTONS
-========================================== */
-
-.guest-buttons{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:12px;
-    margin-top:15px;
-}
-
-.guest-btn{
-    height:58px;
-    border:none;
-    border-radius:16px;
-    background:var(--card);
-    color:var(--text);
-    font-size:20px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.30s;
-    border:1px solid var(--border);
-    box-shadow:0 8px 20px rgba(47,42,37,.04);
-}
-
-.guest-btn:hover{
-    border-color:var(--gold);
-    transform:translateY(-2px);
-    background:var(--gold);
-    color:var(--text);
-}
-
-.guest-btn.active{
-    background:var(--gold);
-    color:var(--text);
-    border-color:var(--gold);
-}
-/* ==========================================
-   MOBILE OPTIMIZATION
-========================================== */
-
-@media (max-width:768px){
-
-    /* =========================
-       HERO
-    ========================= */
-
+    /* HERO */
     .hero{
         min-height:100svh;
         padding:0 20px;
@@ -1482,11 +853,19 @@ COUNTDOWN
         letter-spacing:5px;
     }
 
+    .top-buttons{
+        top:20px;
+        right:20px;
+        gap:10px;
+    }
 
-    /* =========================
-       EVENT
-    ========================= */
+    .circle-btn{
+        width:50px;
+        height:50px;
+        font-size:20px;
+    }
 
+    /* EVENT */
     .event{
         padding:60px 18px;
     }
@@ -1495,7 +874,6 @@ COUNTDOWN
         width:100%;
         padding:42px 24px;
         border-radius:24px;
-        box-sizing:border-box;
     }
 
     .event h2{
@@ -1515,11 +893,7 @@ COUNTDOWN
         padding:16px;
     }
 
-
-    /* =========================
-       PHOTO BREAK
-    ========================= */
-
+    /* PHOTO */
     .photo-break,
     .photo-break-2,
     .countdown{
@@ -1542,11 +916,11 @@ COUNTDOWN
         letter-spacing:4px;
     }
 
+    .photo-break-2 h2{
+        font-size:46px;
+    }
 
-    /* =========================
-       RSVP
-    ========================= */
-
+    /* RSVP */
     .rsvp{
         width:100%;
         padding:55px 16px;
@@ -1572,8 +946,6 @@ COUNTDOWN
         line-height:1.5;
         margin-bottom:28px;
     }
-
-    /* Formu mobilde tek sütuna zorla */
 
     .rsvp-form{
         width:100%;
@@ -1601,7 +973,17 @@ COUNTDOWN
         padding:14px 16px;
     }
 
-    /* Katılım butonları */
+    .rsvp #guestCount{
+        height:48px;
+        padding:0 16px;
+        font-size:14px;
+    }
+
+    .rsvp textarea{
+        min-height:60px;
+        padding:14px 18px;
+        font-size:14px;
+    }
 
     .attendance-buttons{
         width:100%;
@@ -1614,18 +996,12 @@ COUNTDOWN
         font-size:13px;
     }
 
-    /* Gönder */
-
     .submit-button{
         width:100%;
         margin-top:8px;
     }
 
-
-    /* =========================
-       COUNTDOWN
-    ========================= */
-
+    /* COUNTDOWN */
     .countdown{
         padding:80px 20px;
     }
@@ -1651,176 +1027,8 @@ COUNTDOWN
         font-size:11px;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer{
+    /* FOOTER */
+    .footer{
         padding:70px 20px;
     }
-
-}
-/* ==========================================
-   AŞAĞI KAYDIR BUTONU
-========================================== */
-
-.scroll-next{
-
-    width:120px;
-    height:42px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    position:absolute;
-    bottom:28px;
-    left:50%;
-    transform:translateX(-50%);
-
-    background:rgba(255,255,255,.08);
-
-    border:1px solid rgba(255,255,255,.65);
-    border-radius:999px;
-
-    color:white;
-
-    font-size:20px;
-    font-weight:300;
-    line-height:1;
-
-    cursor:pointer;
-
-    z-index:10;
-
-    backdrop-filter:blur(4px);
-    -webkit-backdrop-filter:blur(4px);
-
-    transition:
-        background .3s ease,
-        transform .3s ease,
-        border-color .3s ease;
-}
-
-.scroll-next:hover{
-
-    background:rgba(255,255,255,.18);
-
-    border-color:white;
-
-    transform:translateX(-50%) translateY(-2px);
-}
-
-.scroll-next:active{
-
-    transform:translateX(-50%) translateY(1px);
-
-}
-/* ==========================================
-   TÜM BÖLÜMLERDE AŞAĞI KAYDIR BUTONU
-========================================== */
-
-.hero,
-.event,
-.countdown,
-.rsvp,
-.photo-break{
-    position:relative;
-}
-
-.scroll-next{
-    width:120px;
-    height:42px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    position:absolute;
-    bottom:28px;
-    left:50%;
-    transform:translateX(-50%);
-
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.65);
-    border-radius:999px;
-
-    color:white;
-
-    font-size:20px;
-    font-weight:300;
-    line-height:1;
-
-    cursor:pointer;
-    z-index:10;
-
-    backdrop-filter:blur(4px);
-    -webkit-backdrop-filter:blur(4px);
-
-    transition:
-        background .3s ease,
-        transform .3s ease,
-        border-color .3s ease;
-}
-
-.scroll-next:hover{
-    background:rgba(255,255,255,.18);
-    border-color:white;
-    transform:translateX(-50%) translateY(-2px);
-}
-
-.scroll-next:active{
-    transform:translateX(-50%) translateY(1px);
-}
-/* FOOTER'I DA SCROLL SNAP SİSTEMİNE DAHİL ET */
-
-footer{
-    scroll-snap-align:start;
-    scroll-snap-stop:always;
-    min-height:100vh;
-}
-/* ==========================================
-   RSVP - KİŞİ SAYISI DROPDOWN
-========================================== */
-
-.rsvp #guestCount{
-    width:100%;
-    height:52px;
-    padding:0 18px;
-
-    border:1px solid var(--border);
-    border-radius:12px;
-
-    background:var(--card);
-    color:var(--text);
-
-    font-family:"Montserrat",sans-serif;
-    font-size:15px;
-
-    outline:none;
-    cursor:pointer;
-
-    appearance:auto;
-}
-
-.rsvp #guestCount:focus{
-    border-color:var(--gold);
-}
-@media (max-width:768px){
-
-    .rsvp #guestCount{
-        height:48px;
-        padding:0 16px;
-        font-size:14px;
-    }
-
-}
-/* RSVP - KÜÇÜK NOT ALANI */
-
-.rsvp textarea{
-    min-height:60px;
-    padding:14px 18px;
-    font-size:14px;
-}
 }
