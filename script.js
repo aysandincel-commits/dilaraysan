@@ -368,6 +368,29 @@ guestButtons.forEach(button=>{
     });
 
 });
+/* ==========================================
+   AŞAĞI KAYDIR BUTONLARI
+========================================== */
+
+document.querySelectorAll(".scroll-next").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const currentSection = button.closest("section");
+        const nextSection = currentSection?.nextElementSibling;
+
+        if(nextSection){
+
+            nextSection.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+
+        }
+
+    });
+
+});
 
 updateCountdown();
 
