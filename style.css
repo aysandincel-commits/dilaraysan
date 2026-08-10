@@ -823,7 +823,7 @@ header{
 /* RSVP OKU */
 
 .rsvp .scroll-next{
-    bottom:40px;
+    bottom:80px !important;
 }
 /* ==========================================
    RESPONSIVE
