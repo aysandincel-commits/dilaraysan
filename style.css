@@ -584,80 +584,97 @@ header{
 }
 
 /* ==========================================
-   COUNTDOWN
+   COUNTDOWN - MOBILE
 ========================================== */
+
 .countdown{
-    position:relative;
-    min-height:100vh;
+    min-height:100svh;
+    padding:55px 20px 85px;
+    box-sizing:border-box;
+
     display:flex;
-    justify-content:center;
     align-items:center;
-    padding:120px 30px;
-    text-align:center;
-    overflow:hidden;
-    background:linear-gradient(rgba(40,32,25,.38),rgba(40,32,25,.38)),url("assets/photos/coundownb.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-}
+    justify-content:center;
 
-.countdown-content{
-    width:min(100%,1000px);
     position:relative;
-    z-index:2;
 }
 
-.countdown-small{
-    color:#F1D8AA;
-    letter-spacing:8px;
-    font-size:12px;
-    text-transform:uppercase;
+/* Arka planı biraz daha aydınlık tut */
+.countdown::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,250,242,.20);
+    z-index:0;
 }
 
+.countdown > *{
+    position:relative;
+    z-index:1;
+}
+
+/* Üstteki GERİ SAYIM yazısı varsa */
 .countdown h2{
-    font-family:"Cormorant Garamond",serif;
-    font-size:60px;
+    font-size:42px;
+    line-height:1.12;
+    margin:0 0 18px;
+    text-align:center;
     font-weight:400;
-    margin:22px 0 60px;
-    color:white;
 }
 
-.count-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.count-item{
-    background:rgba(255,255,255,.12);
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
-    border:1px solid rgba(255,255,255,.25);
-    border-radius:24px;
-    padding:40px 15px;
-}
-
-.count-item span{
-    display:block;
-    font-size:72px;
-    font-weight:600;
-    color:#F1D8AA;
-    font-family:"Cormorant Garamond",serif;
-}
-
-.count-item small{
-    display:block;
-    margin-top:12px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    color:rgba(255,255,255,.9);
-}
-
-.count-date{
-    margin-top:55px;
-    color:white;
+/* Tarih */
+.countdown .countdown-date{
+    font-size:14px;
     letter-spacing:4px;
+    margin-bottom:28px;
+}
+
+/* 2 x 2 kutular */
+.count-grid{
+    width:100%;
+    max-width:390px;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+/* Countdown kutuları */
+.count-item{
+    min-height:125px;
+    padding:18px 10px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,251,244,.76);
+
+    border:1px solid rgba(198,169,119,.28);
+    border-radius:20px;
+
+    box-shadow:0 4px 18px rgba(80,60,40,.06);
+}
+
+/* Büyük rakam */
+.count-item span{
+    font-size:40px;
+    line-height:1;
+    font-weight:400;
+
+    color:#c6a76f;
+
+    margin-bottom:12px;
+}
+
+/* GÜN / SAAT / DAKİKA / SANİYE */
+.count-item small{
+    font-size:10px;
+    letter-spacing:3px;
+    line-height:1;
+
+    color:#6f6258;
 }
 
 /* ==========================================
