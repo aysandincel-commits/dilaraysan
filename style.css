@@ -316,7 +316,7 @@ header{
     margin-top:40px;
     padding:16px 34px;
     border-radius:999px;
-    border:1px solid var(--border);
+    border:1px solid #F95893;
     background:var(--card);
     color:var(--text);
     cursor:pointer;
