@@ -589,173 +589,306 @@ header{
 
 .countdown{
     min-height:100svh;
-    padding:70px 18px 80px;
+    width:100%;
+
+    padding:70px 18px 85px;
     box-sizing:border-box;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    text-align:center;
     position:relative;
     overflow:hidden;
 
-    /* ARKA PLAN GÖRSELİ */
+    text-align:center;
+
     background:
         linear-gradient(
-            rgba(255,250,242,.12),
-            rgba(255,250,242,.12)
+            rgba(255,250,242,.08),
+            rgba(255,250,242,.08)
         ),
-        url("assets/photos/coundownb.png") center center / cover no-repeat;
+        url("assets/photos/coundownb.png");
 
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
     background-attachment:scroll;
 }
 
 
-/* İÇERİK */
+/* ==========================================
+   İÇERİK
+========================================== */
 
 .countdown-content{
     width:100%;
     max-width:390px;
+
     position:relative;
     z-index:2;
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 }
 
 
-/* GERİ SAYIM */
+/* ==========================================
+   GERİ SAYIM
+========================================== */
 
 .countdown-small{
     display:block;
 
-    color:#c09b61;
-    font-size:10px;
-    letter-spacing:6px;
+    color:#b88b46;
 
-    margin-bottom:14px;
+    font-family:Arial,sans-serif;
+    font-size:11px;
+
+    letter-spacing:6px;
+    text-transform:uppercase;
+
+    margin-bottom:20px;
 }
 
 
-/* BAŞLIK */
+/* ==========================================
+   ÜST DEKORATİF ÇİZGİ
+========================================== */
 
 .countdown h2{
+    position:relative;
+
     font-family:"Cormorant Garamond",serif;
 
-    font-size:36px;
+    font-size:42px;
     line-height:1.05;
     font-weight:400;
 
-    color:#302922;
+    color:#332a23;
 
     margin:0 0 18px;
+
+    padding-top:28px;
 }
 
 
-/* TARİH */
+/* küçük gold süs */
+.countdown h2::before{
+    content:"◆";
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:170px;
+
+    color:#c49a59;
+
+    font-family:Arial,sans-serif;
+    font-size:8px;
+    letter-spacing:18px;
+
+    border-top:1px solid rgba(196,154,89,.75);
+
+    padding-top:0;
+}
+
+
+/* ==========================================
+   TARİH
+========================================== */
 
 .count-date{
-    margin:0 0 26px;
+    margin:0 0 30px;
 
-    color:#75685c;
+    color:#b88b46;
 
+    font-family:Arial,sans-serif;
     font-size:13px;
-    letter-spacing:3px;
+
+    letter-spacing:4px;
 }
 
 
-/* COUNTDOWN KUTULARI */
+/* ==========================================
+   COUNTDOWN GRID
+========================================== */
 
 .count-grid{
     width:100%;
 
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
 
     gap:12px;
-}
 
-/* COUNTDOWN GOLD NOKTALAR */
-
-.count-grid{
     position:relative;
 }
 
-.count-grid::before{
-    content:"";
-    position:absolute;
-    width:5px;
-    height:5px;
-    background:#c09b61;
-    border-radius:50%;
 
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-
-    z-index:5;
-
-    box-shadow:
-        0 -70px 0 #c09b61,
-        0 70px 0 #c09b61;
-}
-/* KUTU */
+/* ==========================================
+   KUTULAR
+========================================== */
 
 .count-item{
-    min-height:112px;
+    position:relative;
 
-    padding:16px 8px;
+    min-height:122px;
+
+    padding:18px 8px;
+
+    box-sizing:border-box;
 
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
 
-    background:rgba(255,250,242,.82);
+    background:rgba(255,252,247,.72);
 
-    border:1px solid rgba(192,155,97,.35);
+    border:1px solid rgba(190,153,99,.25);
 
     border-radius:20px;
 
-    box-sizing:border-box;
+    box-shadow:
+        0 3px 15px rgba(80,60,40,.035);
 
-    box-shadow:0 5px 20px rgba(70,50,35,.06);
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
 }
 
 
-/* SAYI */
+/* ==========================================
+   SAYILAR
+========================================== */
 
 .count-item span{
     display:block;
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:44px;
+    font-size:48px;
     line-height:1;
 
-    font-weight:500;
+    font-weight:400;
 
-    color:#c09b61;
+    color:#b88b46;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 
-/* GÜN / SAAT */
+/* ==========================================
+   GÜN / SAAT / DAKİKA / SANİYE
+========================================== */
 
 .count-item small{
     display:block;
 
     margin:0;
 
-    font-size:9px;
-    letter-spacing:3px;
+    color:#5e5147;
 
-    color:#62564c;
+    font-family:Arial,sans-serif;
+
+    font-size:10px;
+
+    letter-spacing:3px;
 
     text-transform:uppercase;
 }
 
+
+/* ==========================================
+   GOLD NOKTALAR
+   1 ↔ 2
+   3 ↔ 4
+========================================== */
+
+.count-item:nth-child(1)::after,
+.count-item:nth-child(3)::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#c49a59;
+
+    right:-9px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    z-index:5;
+}
+
+
+/* ==========================================
+   GOLD NOKTALAR
+   1 ↕ 3
+   2 ↕ 4
+========================================== */
+
+.count-item:nth-child(1)::before,
+.count-item:nth-child(2)::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#c49a59;
+
+    bottom:-9px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:5;
+}
+
+
+/* ==========================================
+   ALT DEKORATİF ÇİZGİ
+========================================== */
+
+.count-grid::after{
+
+    content:"◆";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-58px;
+
+    transform:translateX(-50%);
+
+    width:170px;
+
+    color:#c49a59;
+
+    font-size:8px;
+
+    letter-spacing:18px;
+
+    border-top:1px solid rgba(196,154,89,.75);
+
+    padding-top:0;
+}
 /* ==========================================
    FOOTER
 ========================================== */
