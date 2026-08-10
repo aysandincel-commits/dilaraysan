@@ -156,7 +156,7 @@ header{
 }
 
 .hero h1 .ampersand{
-    color:var(--gold);
+    color:#F95893;
 }
 
 .hero:hover h1{
