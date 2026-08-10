@@ -823,7 +823,7 @@ header{
 /* RSVP OKU */
 
 .rsvp .scroll-next{
-    bottom:24px;
+    bottom:49px;
 }
 /* ==========================================
    RESPONSIVE
@@ -956,6 +956,7 @@ header{
     padding:26px 20px;
     border-radius:22px;
     box-sizing:border-box;
+    transform:translateY(-25px);
 }
    .rsvp h2{
     font-size:38px;
