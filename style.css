@@ -907,51 +907,63 @@ header{
 /* ==========================================
    PHOTO BREAK 2
 ========================================== */
+
 .photo-break-2{
     position:relative;
     min-height:100vh;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     overflow:hidden;
+
     background-image:url("assets/photos/photo2.png");
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
-    animation:photoZoom 18s ease-in-out infinite alternate;
+    background-attachment:scroll;
 }
 
+/* KARARTMA YOK */
+
 .photo-break-2::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(135deg,rgba(255,248,239,.15) 0%,rgba(47,42,37,.22) 60%,rgba(47,42,37,.46) 100%);
+    display:none;
 }
 
 .photo-break-2 .photo-content{
     position:relative;
     z-index:2;
+
     width:min(90%,900px);
+
     text-align:center;
+
     padding:0 25px;
 }
 
 .photo-break-2 span{
     display:block;
+
     color:var(--gold);
+
     letter-spacing:8px;
     font-size:12px;
+
     text-transform:uppercase;
+
     margin-bottom:22px;
 }
 
 .photo-break-2 h2{
     font-family:"Cormorant Garamond",serif;
+
     font-size:72px;
     font-weight:400;
     line-height:1.18;
+
     color:var(--white);
+
     text-shadow:0 6px 30px rgba(0,0,0,.30);
 }
 
