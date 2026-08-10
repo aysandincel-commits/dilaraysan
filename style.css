@@ -589,92 +589,148 @@ header{
 
 .countdown{
     min-height:100svh;
-    padding:55px 20px 85px;
+    padding:70px 18px 80px;
     box-sizing:border-box;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    position:relative;
-}
-
-/* Arka planı biraz daha aydınlık tut */
-.countdown::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(255,250,242,.20);
-    z-index:0;
-}
-
-.countdown > *{
-    position:relative;
-    z-index:1;
-}
-
-/* Üstteki GERİ SAYIM yazısı varsa */
-.countdown h2{
-    font-size:42px;
-    line-height:1.12;
-    margin:0 0 18px;
     text-align:center;
-    font-weight:400;
+    position:relative;
+    overflow:hidden;
+
+    /* ARKA PLAN GÖRSELİ */
+    background:
+        linear-gradient(
+            rgba(255,250,242,.12),
+            rgba(255,250,242,.12)
+        ),
+        url("assets/photos/coundownb.png") center center / cover no-repeat;
+
+    background-attachment:scroll;
 }
 
-/* Tarih */
-.countdown .countdown-date{
-    font-size:14px;
-    letter-spacing:4px;
-    margin-bottom:28px;
-}
 
-/* 2 x 2 kutular */
-.count-grid{
+/* İÇERİK */
+
+.countdown-content{
     width:100%;
     max-width:390px;
+    position:relative;
+    z-index:2;
+
+    transform:translateY(-10px);
+}
+
+
+/* GERİ SAYIM */
+
+.countdown-small{
+    display:block;
+
+    color:#c09b61;
+    font-size:10px;
+    letter-spacing:6px;
+
+    margin-bottom:14px;
+}
+
+
+/* BAŞLIK */
+
+.countdown h2{
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:36px;
+    line-height:1.05;
+    font-weight:400;
+
+    color:#302922;
+
+    margin:0 0 18px;
+}
+
+
+/* TARİH */
+
+.count-date{
+    margin:0 0 26px;
+
+    color:#75685c;
+
+    font-size:13px;
+    letter-spacing:3px;
+}
+
+
+/* COUNTDOWN KUTULARI */
+
+.count-grid{
+    width:100%;
 
     display:grid;
     grid-template-columns:repeat(2,1fr);
+
     gap:12px;
 }
 
-/* Countdown kutuları */
+
+/* KUTU */
+
 .count-item{
-    min-height:125px;
-    padding:18px 10px;
+    min-height:112px;
+
+    padding:16px 8px;
 
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
 
-    background:rgba(255,251,244,.76);
+    background:rgba(255,250,242,.82);
 
-    border:1px solid rgba(198,169,119,.28);
+    border:1px solid rgba(192,155,97,.35);
+
     border-radius:20px;
 
-    box-shadow:0 4px 18px rgba(80,60,40,.06);
+    box-sizing:border-box;
+
+    box-shadow:0 5px 20px rgba(70,50,35,.06);
 }
 
-/* Büyük rakam */
+
+/* SAYI */
+
 .count-item span{
-    font-size:40px;
+    display:block;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:44px;
     line-height:1;
-    font-weight:400;
 
-    color:#c6a76f;
+    font-weight:500;
 
-    margin-bottom:12px;
+    color:#c09b61;
+
+    margin-bottom:10px;
 }
 
-/* GÜN / SAAT / DAKİKA / SANİYE */
-.count-item small{
-    font-size:10px;
-    letter-spacing:3px;
-    line-height:1;
 
-    color:#6f6258;
+/* GÜN / SAAT */
+
+.count-item small{
+    display:block;
+
+    margin:0;
+
+    font-size:9px;
+    letter-spacing:3px;
+
+    color:#62564c;
+
+    text-transform:uppercase;
 }
 
 /* ==========================================
