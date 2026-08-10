@@ -880,18 +880,18 @@ header{
     font-size:48px;
     font-weight:400;
     margin-bottom:15px;
-    color:#F95893;
+    color:#000;
 }
 
 .footer p{
-    color:var(--text-light);
+    color:#F95893;
     letter-spacing:3px;
     margin-bottom:30px;
 }
 
 .footer span{
     font-size:13px;
-    color:var(--text-light);
+    color:#F95893;
     letter-spacing:2px;
 }
 
