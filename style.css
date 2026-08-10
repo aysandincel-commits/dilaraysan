@@ -836,7 +836,7 @@ header{
 ========================================== */
 
 .rsvp-scroll-next{
-    bottom:30px !important;
+    bottom:40px !important;
 }
 
 @media(max-width:768px){
@@ -859,7 +859,7 @@ header{
 
     .rsvp-scroll-next{
         top:auto !important;
-        bottom:30px !important;
+        bottom:40px !important;
     }
 
     .attendance-btn.active{
