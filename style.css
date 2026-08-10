@@ -1132,33 +1132,6 @@ header{
     margin-top:4px;
     padding:13px;
 }
-
-    /* COUNTDOWN */
-    .countdown{
-        padding:80px 20px;
-    }
-
-    .countdown h2{
-        font-size:44px;
-    }
-
-    .count-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:16px;
-    }
-
-    .count-item{
-        padding:24px 10px;
-    }
-
-    .count-item span{
-        font-size:44px;
-    }
-
-    .count-item small{
-        font-size:11px;
-    }
-
     /* FOOTER */
     .footer{
         padding:70px 20px;
