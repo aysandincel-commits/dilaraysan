@@ -650,53 +650,6 @@ header{
     margin-bottom:20px;
 }
 
-
-/* ==========================================
-   ÜST DEKORATİF ÇİZGİ
-========================================== */
-
-.countdown h2{
-    position:relative;
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:42px;
-    line-height:1.05;
-    font-weight:400;
-
-    color:#332a23;
-
-    margin:0 0 18px;
-
-    padding-top:28px;
-}
-
-
-/* küçük gold süs */
-.countdown h2::before{
-    content:"◆";
-
-    position:absolute;
-
-    top:0;
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:170px;
-
-    color:#c49a59;
-
-    font-family:Arial,sans-serif;
-    font-size:8px;
-    letter-spacing:18px;
-
-    border-top:1px solid rgba(196,154,89,.75);
-
-    padding-top:0;
-}
-
-
 /* ==========================================
    TARİH
 ========================================== */
@@ -860,35 +813,6 @@ header{
     z-index:5;
 }
 
-
-/* ==========================================
-   ALT DEKORATİF ÇİZGİ
-========================================== */
-
-.count-grid::after{
-
-    content:"◆";
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:-58px;
-
-    transform:translateX(-50%);
-
-    width:170px;
-
-    color:#c49a59;
-
-    font-size:8px;
-
-    letter-spacing:18px;
-
-    border-top:1px solid rgba(196,154,89,.75);
-
-    padding-top:0;
-}
 /* ==========================================
    FOOTER
 ========================================== */
