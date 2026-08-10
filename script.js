@@ -376,7 +376,7 @@ document.querySelectorAll(".scroll-next").forEach(button => {
 
     button.addEventListener("click", () => {
 
-        const currentSection = button.closest("section");
+        const currentSection = button.closest("section, header");
 
         if (!currentSection) return;
 
@@ -384,9 +384,9 @@ document.querySelectorAll(".scroll-next").forEach(button => {
 
         if (nextSection) {
 
-            window.scrollTo({
-                top: nextSection.offsetTop,
-                behavior: "smooth"
+            nextSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
             });
 
         }
