@@ -647,8 +647,50 @@ header{
     letter-spacing:6px;
     text-transform:uppercase;
 
-    margin-bottom:20px;
+    margin-bottom:14px;
 }
+
+
+/* ==========================================
+   DEKORATİF SVG
+========================================== */
+
+.countdown-deco{
+    display:block;
+
+    width:180px;
+    height:auto;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.countdown-deco-top{
+    margin-top:0;
+    margin-bottom:18px;
+}
+
+.countdown-deco-bottom{
+    margin-top:38px;
+}
+
+
+/* ==========================================
+   BAŞLIK
+========================================== */
+
+.countdown h2{
+    margin:0 0 18px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+    line-height:1.05;
+    font-weight:400;
+
+    color:#332a23;
+}
+
 
 /* ==========================================
    TARİH
@@ -812,7 +854,6 @@ header{
 
     z-index:5;
 }
-
 /* ==========================================
    FOOTER
 ========================================== */
