@@ -853,7 +853,7 @@ header{
 ========================================== */
 
 .rsvp-scroll-next{
-    bottom:50px !important;
+    bottom:45px !important;
 }
 
 @media(max-width:768px){
@@ -869,7 +869,7 @@ header{
     .countdown .scroll-next,
     .photo-break .scroll-next,
     .photo-break-2 .scroll-next{
-        bottom:50px;
+        bottom:45px;
     }
 
     /* RSVP OKU - MOBİL */
