@@ -128,8 +128,6 @@ body{
 
     background:linear-gradient(135deg, rgba(255,248,239,.22) 0%, rgba(255,248,239,.10) 30%, rgba(47,42,37,.22) 100%);
 
-    backdrop-filter:blur(1px);
-
 }
 
 /* ORTA */
