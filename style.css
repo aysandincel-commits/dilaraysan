@@ -1442,7 +1442,9 @@ COUNTDOWN
 
 @media (max-width:768px){
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero{
         min-height:100svh;
@@ -1454,16 +1456,16 @@ COUNTDOWN
     }
 
     .monogram{
-    width:100%;
-    margin-bottom:20px;
-    text-align:center;
-}
+        width:100%;
+        margin-bottom:20px;
+        text-align:center;
+    }
 
     .monogram img{
-    width:100px;
-    display:block;
-    margin:0 auto;
-}
+        width:100px;
+        display:block;
+        margin:0 auto;
+    }
 
     .hero h1{
         font-size:56px;
@@ -1481,7 +1483,9 @@ COUNTDOWN
     }
 
 
-    /* EVENT */
+    /* =========================
+       EVENT
+    ========================= */
 
     .event{
         padding:60px 18px;
@@ -1491,6 +1495,7 @@ COUNTDOWN
         width:100%;
         padding:42px 24px;
         border-radius:24px;
+        box-sizing:border-box;
     }
 
     .event h2{
@@ -1511,164 +1516,150 @@ COUNTDOWN
     }
 
 
-    /* PHOTO BREAK */
+    /* =========================
+       PHOTO BREAK
+    ========================= */
 
     .photo-break,
     .photo-break-2,
     .countdown{
-
         background-attachment:scroll;
         background-position:center center;
-
     }
 
     .photo-content{
-
         max-width:100%;
         padding:0 20px;
-
     }
 
     .photo-content h2{
-
         font-size:48px;
         line-height:1.15;
-
     }
 
     .photo-content .story-date{
-
         font-size:17px;
         letter-spacing:4px;
-
     }
 
 
-    /* RSVP */
+    /* =========================
+       RSVP
+    ========================= */
 
     .rsvp{
-
-        padding:60px 18px;
-
+        width:100%;
+        padding:55px 16px;
+        box-sizing:border-box;
+        overflow:hidden;
     }
 
     .rsvp-box{
-
         width:100%;
-        padding:36px 22px;
-
+        max-width:100%;
+        padding:32px 22px;
+        border-radius:22px;
+        box-sizing:border-box;
     }
 
-    .guest-buttons{
-
-        grid-template-columns:repeat(3,1fr);
-        gap:12px;
-
+    .rsvp h2{
+        font-size:40px;
+        line-height:1.1;
+        margin-bottom:12px;
     }
+
+    .rsvp-text{
+        line-height:1.5;
+        margin-bottom:28px;
+    }
+
+    /* Formu mobilde tek sütuna zorla */
+
+    .rsvp-form{
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    .rsvp-form .field{
+        width:100%;
+        min-width:0;
+        margin-bottom:18px;
+    }
+
+    .field label{
+        margin-bottom:8px;
+        font-size:13px;
+    }
+
+    .rsvp input,
+    .rsvp select,
+    .rsvp textarea{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        padding:14px 16px;
+    }
+
+    /* Katılım butonları */
+
+    .attendance-buttons{
+        width:100%;
+        gap:8px;
+    }
+
+    .attendance-btn{
+        min-width:0;
+        padding:13px 10px;
+        font-size:13px;
+    }
+
+    /* Gönder */
 
     .submit-button{
-
         width:100%;
-
+        margin-top:8px;
     }
 
 
-    /* COUNTDOWN */
+    /* =========================
+       COUNTDOWN
+    ========================= */
 
     .countdown{
-
         padding:80px 20px;
-
     }
 
     .countdown h2{
-
         font-size:44px;
-
     }
 
     .count-grid{
-
         grid-template-columns:repeat(2,1fr);
         gap:16px;
-
     }
 
     .count-item{
-
         padding:24px 10px;
-
     }
 
     .count-item span{
-
         font-size:44px;
-
     }
 
     .count-item small{
-
         font-size:11px;
-
     }
 
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer{
-
         padding:70px 20px;
-
     }
-/* RSVP KOMPAKT */
 
-.rsvp{
-    padding:55px 16px;
-}
-
-.rsvp-box{
-    width:100%;
-    padding:32px 22px;
-    border-radius:22px;
-}
-
-.rsvp h2{
-    font-size:40px;
-    margin-bottom:12px;
-}
-
-.rsvp-text{
-    line-height:1.5;
-    margin-bottom:28px;
-}
-
-.field{
-    margin-bottom:18px;
-}
-
-.field label{
-    margin-bottom:8px;
-    font-size:13px;
-}
-
-.rsvp input,
-.rsvp select,
-.rsvp textarea{
-    padding:14px 16px;
-}
-
-.attendance-buttons{
-    gap:8px;
-}
-
-.attendance-btn{
-    padding:13px 10px;
-    font-size:13px;
-}
-
-.submit-button{
-    margin-top:8px;
-}
 }
 /* ==========================================
    AŞAĞI KAYDIR BUTONU
