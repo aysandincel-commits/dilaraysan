@@ -119,10 +119,12 @@ header{
     width:80px;
     height:1px;
     background:var(--gold);
-    transform:translateY(10px);
-    margin:0 auto 45px;
-}
 
+    margin:0 auto 20px;
+
+    position:relative;
+    top:20px;
+}
 .monogram{
     margin-bottom:15px;
     transition:.7s;
