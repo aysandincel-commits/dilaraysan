@@ -1671,24 +1671,4 @@ COUNTDOWN
     transform:translateX(-50%) translateY(1px);
 
 }
-/* ==========================================
-   MOBILE MONOGRAM CENTER
-========================================== */
-
-@media (max-width:768px){
-
-    .monogram{
-        width:100%;
-        margin-left:0;
-        margin-right:0;
-        text-align:center;
-    }
-
-    .monogram img{
-        display:block;
-        width:180px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
 }
