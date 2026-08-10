@@ -1093,7 +1093,7 @@ header{
 
     /* HERO YAZI GRUBU - MOBİLDE BİRAZ YUKARI */
     .hero-content{
-        transform:translateY(-25px);
+        transform:translateY(-35px);
     }
 
     .background{
