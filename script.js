@@ -62,6 +62,29 @@ musicBtn.addEventListener("click", async () => {
 
 });
 
+// Sayfa açılışında müziği başlatmayı dene
+window.addEventListener("load", async () => {
+    try {
+        await music.play();
+        isPlaying = true;
+        musicBtn.textContent = "🔊";
+    } catch (err) {
+        // Tarayıcı otomatik oynatmayı engellerse
+        // ilk kullanıcı etkileşiminde başlat
+        const startMusic = async () => {
+            try {
+                await music.play();
+                isPlaying = true;
+                musicBtn.textContent = "🔊";
+            } catch (e) {
+                console.log("Müzik başlatılamadı.");
+            }
+        };
+
+        document.addEventListener("click", startMusic, { once: true });
+        document.addEventListener("touchstart", startMusic, { once: true });
+    }
+});
 /* -----------------------------
    KONUM
 ------------------------------*/
