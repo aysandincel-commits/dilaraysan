@@ -8,7 +8,7 @@
     --bg:#F8F4EE;
     --section:#FFFDF9;
     --card:#FFFFFF;
-    --gold:#C8A977;
+    --gold:#F95893;
     --text:#2F2A25;
     --text-light:#6E675F;
     --border:#E8DED2;
@@ -882,7 +882,7 @@ header{
     font-size:48px;
     font-weight:400;
     margin-bottom:15px;
-    color:var(--text);
+    color:#F95893;
 }
 
 .footer p{
