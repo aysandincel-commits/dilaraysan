@@ -831,7 +831,11 @@ header{
     bottom:50px;
 }
 
-.rsvp .scroll-next{
+/* ==========================================
+   RSVP SCROLL BUTTON
+========================================== */
+
+.rsvp-scroll-next{
     bottom:30px !important;
 }
 
@@ -851,8 +855,11 @@ header{
         bottom:50px;
     }
 
-    .rsvp .scroll-next{
-        top:calc(100svh - 70px) !important;
+    /* RSVP OKU - MOBİL */
+
+    .rsvp-scroll-next{
+        top:auto !important;
+        bottom:30px !important;
     }
 
     .attendance-btn.active{
