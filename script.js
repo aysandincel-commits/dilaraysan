@@ -180,6 +180,7 @@ if (rsvpForm) {
         const success = document.getElementById("successMessage");
 
         const name = document.getElementById("guestName").value;
+        const phone = document.getElementById("guestPhone").value;
         const status = document.getElementById("attendance").value;
         const count = document.getElementById("guestCount").value;
         const message = document.getElementById("guestMessage").value;
@@ -197,6 +198,7 @@ if (rsvpForm) {
                 body: JSON.stringify({
 
                     name: name,
+                    phone: phone,
                     status: status,
                     count: count,
                     message: message
