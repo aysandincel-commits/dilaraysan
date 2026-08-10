@@ -1734,4 +1734,11 @@ COUNTDOWN
 .scroll-next:active{
     transform:translateX(-50%) translateY(1px);
 }
+/* FOOTER'I DA SCROLL SNAP SİSTEMİNE DAHİL ET */
+
+footer{
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+    min-height:100vh;
+}
 }
