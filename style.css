@@ -631,7 +631,7 @@ header{
 .countdown-small{
     display:block;
 
-    color:#b88b46;
+    color:#F95893;
 
     font-family:Arial,sans-serif;
     font-size:11px;
@@ -691,14 +691,13 @@ header{
 .count-date{
     margin:0 0 30px;
 
-    color:#b88b46;
+    color:#F95893; 
 
     font-family:Arial,sans-serif;
     font-size:13px;
 
     letter-spacing:4px;
 }
-
 
 /* ==========================================
    COUNTDOWN GRID
@@ -763,7 +762,7 @@ header{
 
     font-weight:400;
 
-    color:#b88b46;
+    color:#F95893;
 
     margin-bottom:12px;
 }
@@ -778,7 +777,7 @@ header{
 
     margin:0;
 
-    color:#5e5147;
+    color:#F95893;
 
     font-family:Arial,sans-serif;
 
