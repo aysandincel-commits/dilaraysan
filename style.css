@@ -824,7 +824,7 @@ header{
 
 .rsvp .scroll-next{
     bottom:auto !important;
-    top:calc(100% - 130px) !important;
+    top:calc(100% - 100px) !important;
 }
 /* ==========================================
    RESPONSIVE
