@@ -1046,4 +1046,9 @@ header{
     .footer{
         padding:70px 20px;
     }
+   .attendance-btn.active{
+    background:var(--gold) !important;
+    border-color:var(--gold) !important;
+    color:var(--text) !important;
+}
 }
