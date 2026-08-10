@@ -143,7 +143,7 @@ header{
 
 .hero h1 span{
     display:block;
-    color:var(--gold);
+    color:#F95893;
     font-size:36px;
     margin:14px 0;
 }
@@ -198,8 +198,8 @@ header{
 
 .circle-btn:hover{
     transform:translateY(-3px);
-    border-color:var(--gold);
-    color:var(--gold);
+    border-color:#F95893;
+    color:#F95893;
     box-shadow:0 15px 35px rgba(200,169,119,.18);
 }
 
@@ -277,7 +277,7 @@ header{
 }
 
 .event-small{
-    color:var(--gold);
+    color:#F95893;
     letter-spacing:6px;
     font-size:12px;
     text-transform:uppercase;
@@ -294,7 +294,7 @@ header{
 .event-line{
     width:80px;
     height:1px;
-    background:var(--gold);
+    background:#F95893;
     margin:35px auto;
 }
 
