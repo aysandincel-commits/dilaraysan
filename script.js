@@ -380,7 +380,14 @@ document.querySelectorAll(".scroll-next").forEach(button => {
 
         if (!currentSection) return;
 
-        const nextSection = currentSection.nextElementSibling;
+        let nextSection = currentSection.nextElementSibling;
+
+        while (
+            nextSection &&
+            !nextSection.matches("section, header, footer")
+        ) {
+            nextSection = nextSection.nextElementSibling;
+        }
 
         if (nextSection) {
 
@@ -394,7 +401,6 @@ document.querySelectorAll(".scroll-next").forEach(button => {
     });
 
 });
-
 updateCountdown();
 
 setInterval(updateCountdown,1000);
