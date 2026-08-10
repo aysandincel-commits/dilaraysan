@@ -7,7 +7,7 @@
 :root{
     --bg:#F8F4EE;
     --section:#FFFDF9;
-    --card:#FFFFFFf
+    --card:#FFFFFF;
     --gold:#C8A977;
     --text:#2F2A25;
     --text-light:#6E675F;
@@ -820,12 +820,35 @@ header{
 }
 
 
-/* RSVP OKU */
+/* ==========================================
+   SECTION SCROLL BUTTON POSITIONS
+========================================== */
 
 .rsvp .scroll-next{
     bottom:auto !important;
-    top:calc(100% - 80px) !important;
+    top:calc(100svh - 100px) !important;
 }
+
+@media(max-width:768px){
+    .event-card{
+        transform:translateY(-25px);
+    }
+
+    .countdown-content{
+        transform:translateY(-20px);
+    }
+
+    .rsvp .scroll-next{
+        top:calc(100svh - 100px) !important;
+    }
+
+    .attendance-btn.active{
+        background:var(--gold) !important;
+        border-color:var(--gold) !important;
+        color:var(--text) !important;
+    }
+}
+
 /* ==========================================
    RESPONSIVE
 ========================================== */
