@@ -119,7 +119,8 @@ header{
     width:80px;
     height:1px;
     background:var(--gold);
-    margin:0 auto 5px;
+    transform:translateY(10px);
+    margin:0 auto 45px;
 }
 
 .monogram{
