@@ -832,8 +832,7 @@ header{
 }
 
 .rsvp .scroll-next{
-    bottom:auto !important;
-    top:calc(100svh - 80px) !important;
+    bottom:50px !important;
 }
 
 @media(max-width:768px){
