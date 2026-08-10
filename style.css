@@ -7,7 +7,7 @@
 :root{
     --bg:#F8F4EE;
     --section:#FFFDF9;
-    --card:#FFFFFF;
+    --card:#FFFFFFf
     --gold:#C8A977;
     --text:#2F2A25;
     --text-light:#6E675F;
@@ -823,7 +823,7 @@ header{
 /* RSVP OKU */
 
 .rsvp .scroll-next{
-    bottom:49px;
+    bottom:18px;
 }
 /* ==========================================
    RESPONSIVE
@@ -939,24 +939,28 @@ header{
         font-size:46px;
     }
 
-    /* RSVP */
+/* RSVP */
+
 .rsvp{
     width:100%;
     min-height:100svh;
-    padding:42px 14px 80px;
+    padding:25px 14px 95px;
     box-sizing:border-box;
     overflow:hidden;
+
     display:flex;
     align-items:center;
     justify-content:center;
 }
-    .rsvp-box{
+
+.rsvp-box{
     width:100%;
     max-width:100%;
-    padding:26px 20px;
+    padding:24px 20px;
     border-radius:22px;
     box-sizing:border-box;
-    transform:translateY(-25px);
+
+    transform:none;
 }
    .rsvp h2{
     font-size:38px;
