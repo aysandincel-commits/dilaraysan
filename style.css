@@ -1741,4 +1741,40 @@ footer{
     scroll-snap-stop:always;
     min-height:100vh;
 }
+/* ==========================================
+   RSVP - KİŞİ SAYISI DROPDOWN
+========================================== */
+
+.rsvp #guestCount{
+    width:100%;
+    height:52px;
+    padding:0 18px;
+
+    border:1px solid var(--border);
+    border-radius:12px;
+
+    background:var(--card);
+    color:var(--text);
+
+    font-family:"Montserrat",sans-serif;
+    font-size:15px;
+
+    outline:none;
+    cursor:pointer;
+
+    appearance:auto;
+}
+
+.rsvp #guestCount:focus{
+    border-color:var(--gold);
+}
+@media (max-width:768px){
+
+    .rsvp #guestCount{
+        height:48px;
+        padding:0 16px;
+        font-size:14px;
+    }
+
+}
 }
