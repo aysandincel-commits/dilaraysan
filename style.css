@@ -112,7 +112,6 @@ header{
     z-index:10;
     text-align:center;
     width:min(90%,760px);
-    animation:heroFade 1.8s ease;
 }
 
 .monogram{
