@@ -1084,4 +1084,16 @@ header{
     .footer{
         padding:70px 20px;
     }
+ .event .scroll-next{
+    bottom:50px !important;
+}
+
+.countdown .scroll-next{
+    bottom:50px !important;
+}
+
+.photo-break .scroll-next,
+.photo-break-2 .scroll-next{
+    bottom:50px !important;
+}
 }
