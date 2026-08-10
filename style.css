@@ -824,9 +824,16 @@ header{
    SECTION SCROLL BUTTON POSITIONS
 ========================================== */
 
+.event .scroll-next,
+.countdown .scroll-next,
+.photo-break .scroll-next,
+.photo-break-2 .scroll-next{
+    bottom:50px;
+}
+
 .rsvp .scroll-next{
     bottom:auto !important;
-    top:calc(100svh - 100px) !important;
+    top:calc(100svh - 70px) !important;
 }
 
 @media(max-width:768px){
@@ -838,8 +845,15 @@ header{
         transform:translateY(-20px);
     }
 
+    .event .scroll-next,
+    .countdown .scroll-next,
+    .photo-break .scroll-next,
+    .photo-break-2 .scroll-next{
+        bottom:50px;
+    }
+
     .rsvp .scroll-next{
-        top:calc(100svh - 100px) !important;
+        top:calc(100svh - 70px) !important;
     }
 
     .attendance-btn.active{
