@@ -921,85 +921,76 @@ header{
     }
 
     /* RSVP */
-    .rsvp{
-        width:100%;
-        padding:55px 16px;
-        box-sizing:border-box;
-        overflow:hidden;
-    }
-
+.rsvp{
+    width:100%;
+    min-height:100svh;
+    padding:42px 14px 80px;
+    box-sizing:border-box;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
     .rsvp-box{
-        width:100%;
-        max-width:100%;
-        padding:32px 22px;
-        border-radius:22px;
-        box-sizing:border-box;
-    }
+    width:100%;
+    max-width:100%;
+    padding:26px 20px;
+    border-radius:22px;
+    box-sizing:border-box;
+}
+   .rsvp h2{
+    font-size:38px;
+    line-height:1;
+    margin-bottom:8px;
+}
 
-    .rsvp h2{
-        font-size:40px;
-        line-height:1.1;
-        margin-bottom:12px;
-    }
+.rsvp-text{
+    line-height:1.35;
+    margin-bottom:20px;
+}
 
-    .rsvp-text{
-        line-height:1.5;
-        margin-bottom:28px;
-    }
+.rsvp-form .field{
+    margin-bottom:12px;
+}
 
-    .rsvp-form{
-        width:100%;
-        display:grid;
-        grid-template-columns:1fr;
-    }
+.field label{
+    margin-bottom:5px;
+    font-size:12px;
+}
 
-    .rsvp-form .field{
-        width:100%;
-        min-width:0;
-        margin-bottom:18px;
-    }
+.rsvp input,
+.rsvp select,
+.rsvp textarea{
+    padding:11px 14px;
+}
 
-    .field label{
-        margin-bottom:8px;
-        font-size:13px;
-    }
+.rsvp #guestCount{
+    height:44px;
+    padding:0 14px;
+    font-size:13px;
+}
 
-    .rsvp input,
-    .rsvp select,
-    .rsvp textarea{
-        width:100%;
-        max-width:100%;
-        box-sizing:border-box;
-        padding:14px 16px;
-    }
+.rsvp textarea{
+    min-height:48px;
+    padding:10px 14px;
+}
 
-    .rsvp #guestCount{
-        height:48px;
-        padding:0 16px;
-        font-size:14px;
-    }
+.attendance-buttons{
+    gap:6px;
+    margin-top:4px;
+}
 
-    .rsvp textarea{
-        min-height:60px;
-        padding:14px 18px;
-        font-size:14px;
-    }
+.attendance-btn{
+    padding:11px 8px;
+    font-size:11px;
+    margin-bottom:0;
+}
 
-    .attendance-buttons{
-        width:100%;
-        gap:8px;
-    }
-
-    .attendance-btn{
-        min-width:0;
-        padding:13px 10px;
-        font-size:13px;
-    }
-
-    .submit-button{
-        width:100%;
-        margin-top:8px;
-    }
+.submit-button{
+    width:100%;
+    margin-top:4px;
+    padding:13px;
+}
 
     /* COUNTDOWN */
     .countdown{
