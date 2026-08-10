@@ -401,6 +401,33 @@ document.querySelectorAll(".scroll-next").forEach(button => {
     });
 
 });
+/* ==========================================
+   DAVETİYE KİŞİ SAYISI SINIRI
+========================================== */
+
+const guestCountSelect = document.getElementById("guestCount");
+
+if (guestCountSelect) {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const maxGuests = parseInt(params.get("max"));
+
+    if (maxGuests === 2 || maxGuests === 4) {
+
+        guestCountSelect.querySelectorAll("option").forEach(option => {
+
+            const count = parseInt(option.value);
+
+            if (count > maxGuests) {
+                option.remove();
+            }
+
+        });
+
+    }
+
+}
 updateCountdown();
 
 setInterval(updateCountdown,1000);
