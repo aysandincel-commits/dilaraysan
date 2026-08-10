@@ -832,7 +832,7 @@ header{
 }
 
 .rsvp .scroll-next{
-    bottom:50px !important;
+    bottom:30px !important;
 }
 
 @media(max-width:768px){
