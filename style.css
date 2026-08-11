@@ -1265,4 +1265,17 @@ header{
     .footer{
         padding:70px 20px;
     }
+   .venue-address{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.venue-name{
+    display:block;
+}
+
+.venue-street{
+    display:block;
+}
 }
