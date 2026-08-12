@@ -362,8 +362,8 @@ const guestCountInput = document.getElementById("guestCount");
 const urlParams = new URLSearchParams(window.location.search);
 const maxGuests = urlParams.get("max");
 
-/* Sadece 2 veya 4 kişilik davetiyeye izin ver */
-if(maxGuests === "2" || maxGuests === "4"){
+/* Sadece 1,2 veya 4 kişilik davetiyeye izin ver */
+if (maxGuests === 1 || maxGuests === 2 || maxGuests === 4) {
 
     guestButtons.forEach(button => {
 
@@ -438,7 +438,7 @@ if (guestCountSelect) {
 
     const maxGuests = parseInt(params.get("max"));
 
-    if (maxGuests === 2 || maxGuests === 4) {
+    if (maxGuests === 1 || maxGuests === 2 || maxGuests === 4) {
 
         guestCountSelect.querySelectorAll("option").forEach(option => {
 
